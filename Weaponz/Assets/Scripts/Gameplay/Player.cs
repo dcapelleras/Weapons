@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] float shootCooldown = 0.3f;
     float canShoot = 0;
     bool reloading = false;
+    [SerializeField] int shootSoundIndex = 0;
 
     [SerializeField] int maxAmmo = 12;
     [SerializeField] int currentAmmo = 12;
@@ -103,6 +104,7 @@ public class Player : MonoBehaviour
                 canShoot = Time.time + shootCooldown;
                 currentAmmo--;
                 cargador.text = currentAmmo.ToString();
+                MusicManager.instance.ShootSound(shootSoundIndex);
             }
         }
     }
