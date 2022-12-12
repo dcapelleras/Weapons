@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7301701316226796868}
   - component: {fileID: 9179068353308484246}
   - component: {fileID: 1493342754464587244}
+  - component: {fileID: -375319033020064947}
   m_Layer: 0
   m_Name: electric particle
   m_TagString: Untagged
@@ -48,7 +49,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 0
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -4813,3 +4814,15 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-375319033020064947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742121019251648180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68fd5fbc9fd37ac488dd35d1d98a899a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
